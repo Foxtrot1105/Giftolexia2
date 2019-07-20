@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html,
+body {
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+  font-family: sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  height: 100%;
+}
+
+
+mat-sidenav{
+  width: 300px;
+}
+/* mat-sidenav-container, mat-sidenav-content{
+  height: 100%;
+} */
+
+
+.main_body {
+  background: #fff;
+  overflow-y: auto;
+  overflow: hidden;
+  /* min-height: 28%; */
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  /* margin-bottom: -70px; */
+}
+
+/* .main_body.cutom_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
+/* .main_body.bottom {} */
+
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: ">";
+}
+
+
+.mat-drawer-container {
+  position: unset !important;
+}
+
+.mat-toolbar {
+  border-radius: 0px;
+}
+
+.mat-drawer-content {
+  display: unset !important;
+}
+
+.mat-card {
+  border-radius: 2px !important;
+  height: 200px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.mat-toolbar.mat-primary {
+  background: transparent;
+  color: black;
+  border-bottom: 1px solid #ccc;
+}
+
+.mat-menu-content:not(:empty) {
+  padding: 0px !important;
+  border-radius: 2px !important;
+}
+
+.meterChange {
+  position: absolute;
+  right: -65px;
+  top: 20px !important;
+}

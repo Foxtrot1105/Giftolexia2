@@ -1,0 +1,86 @@
+mat-nav-list .toggle{
+  display: none;
+}
+
+.fa-angle-double-left, .fa-angle-double-down{
+  font-size: 25px;
+  color: #747474;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
+}
+.navigation mat-list-item .toggleIcon{
+  display: none;
+}
+.navigation .dropDownList #dropListItem{
+  color: rgb(0, 0, 0);
+  font-style: bold;
+  font-weight: 500;
+}
+
+mat-nav-list mat-list-item{
+  /* border-bottom: 1px solid black; */
+  /* height: 60px; */
+  font-family: 'Roboto', sans-serif;
+}
+
+mat-nav-list mat-list-item mat-icon{
+  color: #747474;
+}
+/* 
+mat-nav-list .dropDownList{
+  background: rgba(212, 206, 206, 0.473);
+} */
+
+mat-nav-list .dropDownList mat-icon{
+  margin: 0 10px;
+}
+
+mat-nav-list mat-list-item .dropDownIcon{
+  position: absolute;
+  right: -20px;
+  padding: 0 35px;
+}
+
+mat-nav-list mat-list-item .downIcon{
+  position: absolute;
+  right: 0;
+}
+
+#listItem{
+  height: 60px;
+  color: black;
+  font-weight: 550;
+}
+
+#firstItem{
+  background: #eee;
+  height: 30px;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+mat-nav-list mat-list-item a{
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}
+
+.nav-caption {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+.mat-menu-panel {
+  margin-left: 0px !important;
+  border-radius: 4px !important;
+}

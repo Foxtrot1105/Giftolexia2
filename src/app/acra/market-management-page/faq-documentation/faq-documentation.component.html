@@ -1,0 +1,517 @@
+<div class="container full-content">
+
+  <div class="row">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="custom_href" href=">"> Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Frequently Asked Questions</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="border-list">
+    <h2>Frequently Asked Questions</h2>
+  </div>
+
+  <div class="col-sm-12 list-content">
+    <h4>A. Getting Started</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        How do I start using the APIs ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>You may wish to reference to the <a href="/#/getting-started" class="text-info">Getting Started</a> guide
+            on ACRA API Mall portal <a href="https://www.apimall.acra.gov.sg"
+              class="text-info">(https://www.apimall.acra.gov.sg)</a>. </p>
+          <p>Customers who wish to use ACRA API services will first need to complete <a
+              (click)="openspcpOptions($event)" style="cursor:pointer" class="text-info">registration</a>
+            in ACRA API Mall portal using SingPass or CorpPass log in. There is no fee for account registration.</p>
+          <p>Successfully registered users will be issued with a user Client_ID and Client_Secret key.
+            Customers may subsequently generate authentication token using the assigned Client_ID and Client_Secret key,
+            coupled with customers' Client_name (application name provided by customer).
+            Note that the generated authorisation token expires after 60 minutes.
+            Customers may re-generate the authentication token when needed.</p>
+          <p>For use of chargeable <a href="/#/api-products" class="text-info">API services</a>, registered users will
+            need to make the necessary payment before using the APIs.
+            Note that subscriptions are valid for up to 90 days from the date of purchase, or when purchased API calls
+            are completely consumed, whichever happens earlier.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        How does system authenticate my request ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>The security method applied is OAUTH2.</p>
+          <p>Customers may generate authentication token using the assigned Client_ID and Client_Secret key, coupled
+            with customers' Client_name (application name provided by customer). Note that the generated authorisation
+            token expires after 60 minutes.
+            Customers may re-generate the authentication token when needed.</p>
+          <p>You may reference to information available within Documention page of respective API services for details
+            on generation of authorisation token.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        Why is there an expiry date to my purchased API services ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Each purchase is valid for use within the stipulated period. The system tracks an expiry date for system
+            optimisation purpose. By ensuring minimal inactive user records in the system, system resources may be free
+            up to optimise system performance for active users.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        Can I submit for multiple accounts using the same SingPass or CorpPass ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Each registered user account is tied to a unique SingPass or CorpPass, which acts as the user ID for
+            account log in.</p>
+          <p>You may wish to be informed that you may provide multiple Client_Name under your registered account in case
+            you have need for the API services in more than one application.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        I did not receive the system notification for my registration status.
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Approval for account creation is immediate. Once your account has been created, a system notification email
+            will be sent to your provided email address as confirmation of your account creation.</p>
+          <p>In case the email is not received, you may wish to look into your junk or spam mail folder to check if our
+            system notification email has been directed there.</p>
+          <p>Customer may log in to ACRA API Mall using SingPass / CorpPass once the account has been created.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        How may I register for the service if I do not have a SingPass or CorpPass ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Note that registration may only be done through <a (click)="openspcpOptions($event)" class="text-info"
+              style="cursor:pointer;">SingPass</a> or <a (click)="openspcpOptions($event)" class="text-info"
+              style="cursor:pointer;">CorpPass</a>.</p>
+          <p>All Singapore citizens, Singapore permanent residents, employment pass holders and dependent pass holders
+            who are at least 15 years old can apply for a SingPass. If you do not have a SingPass yet or have forgotten
+            your SingPass password, you can submit an Online Request to apply or reset your SingPass. Your SingPass will
+            be sent to you by post within 4 working days. If you wish to get your SingPass immediately, you can visit
+            the SingPass counters at any of the CPF offices, Community Development Council (CDC) and selected Community
+            Clubs and Community Centres. For more details on SingPass, please refer to <a
+              href="https://www.ecitizen.gov.sg/Pages/default.aspx" class="text-danger"
+              target="_blank">https://www.ecitizen.gov.sg/Pages/default.aspx</a></p>
+          <p>CorpPass user account can only be created by CorpPass Administrators, who are in turn appointed by an
+            organisation's Registered Officers. Please refer to <a href="www.CorpPass.gov.sg"
+              class="text-danger">www.CorpPass.gov.sg</a> for more information. For registered entities in Singapore,
+            please contact CorpPass team to apply for the required CorpPass under your registered entity.</p>
+          <p>For Non-Singaporeans, you may <a href="http://www.corppass.gov.sg" class="text-info"
+              target="_blank"><u>contact</u></a> SingPass / CorpPass team to apply for the required CorpPass which ties
+            to your operating entity overseas. Note that CorpPass for foreign entities is available only in Q4'18.</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>B. Understanding the Terms of Service</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        Can the acquired data be used on commercial websites or applications ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Please reference to the <a href="/#/term-condition" class="text-info">Terms of Use</a> of ACRA API Mall
+            portal.</p>
+          <p>You can use, access, call, command, query or request the API, whether commercially or non-commercially
+            (âUseâ).</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        Do I need to state the source of data if the data is republished ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Please reference to the <a href="/#/term-condition" class="text-info">Terms of Use</a> of ACRA API Mall
+            portal.</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>C. API Usage</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--1-->
+        What is an API call ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Everytime the API service is invoked to ACRA's servers from customers' application, is considered an API
+            call.</p>
+          <p>Purchased API call will only be deducted when a successful API call is invoked.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--2-->
+        How to identify whether the API call made will be deducted as a successful API call ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Reference Documentation page of respective API calls to learn about the specific error code scenarios. The
+            error codes which will not contribute to a successful call (i.e. no deduction made) are as stated within the
+            sample responses on Documentation page.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--3-->
+        What happens if my purchased API calls have been expended ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Limit on API calls, as well as expiry date, applies for chargeable API services. For uncharged API
+            services, subscription is for unlimited use.</p>
+          <p>Use of the API service/s involved will be discontinued when purchased API calls have been expended. You may
+            purchase new API packages to continue using the API services.</p>
+          <p>Alternatively, you may make use of the system's Auto Top-Up function which is designed to increase
+            convenience for users. Through this function, user permits ACRA API Mall system to automatically top up your
+            balance API calls, with payment through your assigned default payment method.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--4-->
+        I still have un-utilised calls on my subscription expiry date and how can I extend the expiry date ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Expiry date applies for chargeable API services only.</p>
+          <p>Extension of expiry date is not possible. Please note to utilise all calls within your subscription before
+            the expiry date. Expiry date and outstanding calls availability may be tracked from your <font
+              *ngIf="!userSession">Subscription Details</font><a href="#/my-subscriptions" class="text-info"
+              *ngIf="userSession">Subscription Details</a> after logging in to our ACRA API Mall portal through your
+            SingPass / CorpPass.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--5-->
+        I am unable to use the API service suddenly. System returns an error code. Why is this so ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>You are advised to check the error code description.</p>
+          <p>List of error codes may be referenced from the Documentation page of respective API services.</p>
+          <p>You may also wish to check on the expiry date of your API calls purchase through your Subscription Details
+            page by logging into your account on ACRA API Mall using your SingPass / CorpPass.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--6-->
+        How may I test the API services ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>You may utilise the sandbox environment for API testing through the respective API Test Console. The test
+            data which may be used for the sandbox can be found in the API documentation pages.</p>
+          <p>Customer may select the API category containing the API service of interest, click on the selected API
+            service to view the Documentation page, or click on API Test Console to access the sandbox environment for
+            the API service.</p>
+          <p>APIs sandbox environment is available for all users. Registration through SingPass or CorpPass, or acocunt
+            log in is not required.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--7-->
+        Where can I find the specifications of the APIs ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Information of the APIs can be found on the Documentation page of the respective API services.</p>
+          <p>Customer may select the API category containing the API service of interest, click on the selected API
+            service to view the Documentation page.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--8-->
+        I have earlier purchased for service of an API category but why am I unable to use the APIs in the category.
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>You are advised to verify that the purchased API category is displayed through your Subscription Details
+            page by logging into your account on ACRA API Mall using your SingPass / CorpPass. Check on the expiry date
+            of your API calls purchase as well as No. of Remaining API Calls.</p>
+          <p>Note that of purchased service must not have expired, and that No. of Remaining API Calls must not be zero,
+            in order to be eligible for using the API services.</p>
+          <p>Otherwise you may also reference the received error code found under Documentation page of respective APIs
+            to learn more on the error code representation.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--9-->
+        The data received seems to be incorrect. How may I verify or report the suspected issue ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>For report on API services issue, please contact ACRA Helpdesk at +65 6248 6028, or email to <span
+              class="text-info">feedback@askacra.sg</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--10-->
+        I would like to share some feedback on the APIs. How may I submit the feedback to ACRA ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>For comments or feedback on API services, please submit <a href="https://www.acra.gov.sg/feedback"
+              class="text-info" target="_blank">here</a>. Your feedback on our service is much appreciated for our
+            services improvements.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--12-->
+        Which API can I use to pull list of all ACRA registered entities ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>This is not possible. Our APIs are designed to retrieve information of unique entity.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--13-->
+        How do I differentiate between chargeable or non-chargeable APIs ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Fees of API categories are displayed under <a href="/#/api-products" class="text-info">API categories</a>
+          </p>
+          <p>For API services which are non-chargeable, these may be used without limit once customer subscribes to the
+            category. No payment process is needed. After subscription, customer should be able to view the subscribed
+            category from Subscription Details page after logging into ACRA API Mall portal.</p>
+          <p>Chargeble API calls may be made after successful payment for the required API categories. After logging
+            into ACRA API Mall, customer may select and add required API categories to cart, and proceed with payment.
+            Once successful payment is completed, the purchased API calls will be reflected on Subscription Details page
+            after logging into ACRA API Mall portal.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- C.15 -->
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        Why is the response returning an empty result ( E.g. "entities": [] )?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>This response ( "entities": [] ) indicates that the system has performed the search with user's provided
+            inputs, with no results found.</p>
+          <p>For example, in the API service for Company Charges Details, in case where the provided UEN has no charge
+            information, this empty array response will be returned.</p>
+          <p>This could also be for instances where, an UEN of a non-company entity type format is provided when the API
+            service triggered is applicable only for company entity type.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- C.16 -->
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        How may I identify the UEN format for different business entity types?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>UEN format may be referenced from UEN website, <a
+              href="https://www.uen.gov.sg/ueninternet/faces/pages/admin/aboutUEN.jspx" class="text-info"
+              target="_blank">About UEN</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <h4>D. Account Details and Payment Issues</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--1-->
+        How can payment be made ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Payment can be submitted online through the following credit / debit cards:</p>
+          <dl>
+            <dd>- MasterCard</dd>
+            <dd>- Visa</dd>
+          </dl>
+          <p>The above are the only payment modes accepted for API service calls purchase.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--2-->
+        Can I make payment using Deposit Service Account (DSA) that I have set up with ACRA ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>The system is unable to accept payment for API subscription using DSA. ACRA API Mall only accepts online
+            payment through valid credit or debit cards (MasterCard / Visa) issued by banks.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--3-->
+        Can I use giro for payment?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>The system is unable to accept payment for API package purchase using giro. ACRA API Mall only accepts
+            online payment through valid credit or debit cards (MasterCard / Visa) issued by banks.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--4-->
+        How may I request for a refund of submitted payment, or a pro-rated refund on un-utilised API calls which I have
+        paid when subscribing to the API package ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Refund requests for successful payments made cannot be serviced, whether in full or pro-rated. This
+            non-refundable term has been stated as part of the purchase plan, with reminder note before customer
+            proceeds to payment.</p>
+          <p>Please see below extracted:</p>
+          <p>Important Note: By choosing to proceed with payment, I agree that the items in the cart have been checked
+            and verified to be correct. These are valid for use within 90 days from this date of purchase,
+            non-refundable and non-transferable. </p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--5-->
+        How may I request for a transfer of balance API calls to another account ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Requests for transfer of balance API calls cannot be serviced, whether in full or pro-rated. This
+            non-transferable term has been stated as part of the purchase plan, with reminder note before customer
+            proceeds to payment.</p>
+          <p>Please see below extracted:</p>
+          <p>Important Note: By choosing to proceed with payment, I agree that the items in the cart have been checked
+            and verified to be correct. These are valid for use within 90 days from this date of purchase,
+            non-refundable and non-transferable.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--6-->
+        How do I automate API calls top-up upon calls depletion ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>You may enable Auto Top-Up function available on <font *ngIf="!userSession">Subscription Details</font><a
+              href="#/my-subscriptions" class="text-info" *ngIf="userSession">Subscription Details</a> after logging
+            into the ACRA API Mall portal using your SingPass / CorpPass. By confirming the enabling of Auto Top-Up
+            feature, you are granting permission for ACRA API Mall system to automatically top-up your depleted API call
+            balance through your assigned default payment method.</p>
+          <p>For changes on default payment method, please visit Payment Settings Under My Account menu after logging
+            into.</p>
+          <p>Auto Top-Up function is disabled by default.</p>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--7-->
+        How may I disable the Auto Top-Up function to revent package re-purchase upon calls depletion ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Auto Top-Up function can be disabled from <font *ngIf="!userSession">Subscription Details</font><a
+              href="#/my-subscriptions" class="text-info" *ngIf="userSession">Subscription Details</a> after logging
+            into ACRA API Mall portal using your SingPass / CorpPass.</p>
+          <p>Auto Top-Up function is disabled by default.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- D.8 -->
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        I have opted for Auto Top-Up but why am I having zero API balance calls ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>In case where user opted for Auto Top-Up but there were API calls which were left un-utilised after
+            validity period, hence expired, the Auto Top-Up function will be disabled by system to avoid further payment
+            by user.</p>
+          <p>If user's balance API calls were only partially expired (i.e. user has API calls with varying expiry dates
+            within the same API category), Auto Top-Up function will not be disabled.</p>
+          <p>It is posisble for user to re-purchase API package with Auto Top-Up after previous purchase has expired.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h4>E. Technical Setup</h4>
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        Is there any system requirements for using the APIs ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>There is no specific system requirements for using the APIs as long as it is reliable and has active
+            connections to internet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading faqcord">
+        <!--3-->
+        How may I retrieve or edit my Client_ID and Client_Secret key or Authorisation token ?
+      </div>
+      <div class="panel-body">
+        <div class="text-faq">
+          <p>Customer needs to be logged in to ACRA API Mall. Click on API Authorisation under My Account menu.</p>
+          <p>For first time user, click on Add New. The pop up will display the Client_ID and Client_Secret key.
+            Customer may provide the Client_Name and click on Generate token.</p>
+          <p>Note that Client_ID and Client_Secret key is assigned to unique and is fixed. However, customer may edit
+            Client_Name which may have been created in the past.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

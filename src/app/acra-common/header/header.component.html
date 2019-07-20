@@ -1,0 +1,161 @@
+<!-- <div class="row" style="padding-left: 0em; padding-right: 0em;">
+  <div class="col-md-3 col-xs-12 col-sm-12" style="padding-left: 0em; padding-right: 0em;">
+    <div class="api-mall-logo">
+
+      <a class="navbar-brand hidden-xs" routerLink="/" title="ACRA - Accounting And Corporate Regulatory Authority"
+        data-toggle="tooltip" data-placement="bottom">
+        <img width="80%" src="assets/image/api-Mall.png">
+      </a>
+    </div>
+  </div>
+  <div class="col-md-9 col-xs-12 col-sm-12">
+    <div class="col-md-12 row right-header" style="text-align: right; padding-top: 0.5em">
+      <div class="col-md-9 col-xs-12 col-sm-12 navbar-font-resize">
+        <span class="text-resize">Font Resize</span>
+        <a class="small" id="decreaseFont" style="cursor: pointer;">A</a>
+        <a class="normal" id="resetFont" style="cursor: pointer;">A</a>
+        <a class="large" id="increaseFont" style="cursor: pointer;">A</a>
+      </div>
+
+      <div class="col-md-3 col-xs-12 col-sm-12" style="text-align: left">
+        <a href="http://www.gov.sg" target="_blank">
+          <img src="assets/image/govt_logo.jpeg" alt="Goverment Logo">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-12 col-xs-12 col-sm-12 custom_header_style">
+      <div class="header-menu">
+        <li><a href="https://www.acra.gov.sg/About_ACRA/" target="blank_" class="text-nav-top">About Acra</a></li>
+        <li><a routerLink="/contact" class="text-nav-top">Contact Us</a></li>
+        <li><a href="https://www.acra.gov.sg/feedback/" class="text-nav-top" target="blank_">Feedback</a></li>
+        <li><a href="https://www.acra.gov.sg/Useful_Links/" target="blank_" class="text-nav-top">Useful Links</a></li>
+        <li><a href="sitemap.html" class="text-nav-top">Sitemap</a></li>
+      </div>
+    </div>
+
+  </div>
+
+</div> -->
+
+
+<!-- <mat-toolbar color="primary" class="mat-elevation-z1">
+  <button mat-icon-button (click)="openNav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>
+    Angular
+  </span>
+  <span class="fill-remaining-space"></span>
+  <button mat-button>Menu Option 01</button>
+  <button mat-button>Menu Option 02</button>
+
+  <button mat-button (click)="onLogout()">Logout</button>
+</mat-toolbar> -->
+
+<!-- <mat-toolbar class="headerInfo">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+ 
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="assets/image/api-Mall.png" width="200" height="90">
+    </a>
+  </div>
+  
+
+
+
+  <nav class="navigation">
+    <a mat-button routerLink="/first">About ACRA</a>
+    <a mat-button routerLink="/second">Contact Us</a>
+    <a mat-button routerLink="/third"> Feedback </a>
+    <a mat-button routerLink="/third"> Useful Links </a>
+    <a mat-button routerLink="/third"> Sitemap </a>
+  </nav>
+
+
+  <span class="fill-remaining-space"></span>
+
+  <div class="navbar-brand" style="display: grid;line-height: 0px;">
+    <div class="fontChange">
+      <p>Font size &nbsp;<span class="first">A&nbsp;</span><span class="second">A&nbsp;</span><span
+          class="third">A&nbsp;</span></p>
+    </div>
+    <a class="navbar-item">
+      <img class="GovtLogo" src="assets/image/govt_logo.jpeg" width="176" height="25">
+    </a>
+    <button class="logOutButton" mat-button (click)="onLogout()">
+      <mat-icon>exit_to_app</mat-icon>Logout
+    </button>
+    <input type="text" name="googleSearch" placeholder="Google Custom Search...">
+  </div>
+
+</mat-toolbar> -->
+
+
+<mat-toolbar color="primary" style="height: 90px;">
+  <div>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <!-- <div>
+      <a routerLink="/home">Owner-Account</a>
+    </div> -->
+  <div class="navbar-brand" style="padding-bottom: 20px;">
+    <a class="navbar-item">
+      <img src="assets/image/api-Mall.png" width="180" height="64">
+    </a>
+  </div>
+
+  <!-- <mat-form-field floatLabel="never" class="custom_matform_feild">
+    <input name="googleSearch" matInput (keyup)="filterFeeds($event.target.value)" placeholder="Search..." />
+  </mat-form-field> -->
+
+  <span class="fill-remaining-space"></span>
+
+  <nav class="navigation">
+    <a mat-button routerLink="/first">About ACRA</a>
+    <a mat-button routerLink="/second">Contact Us</a>
+    <a mat-button routerLink="/third"> Feedback </a>
+    <a mat-button routerLink="/third"> Useful Links </a>
+    <a mat-button routerLink="/third"> Sitemap </a>
+  </nav>
+
+
+
+  <!-- <div class="custom_break">
+    <input type="search" class="custom_input" name="googleSearch" placeholder="Google Custom Search...">
+  </div> -->
+
+
+  <div class="navbar-brand custom_navbar_style">
+    <!-- <div class="fontChange">
+      <p>Font size &nbsp;<span class="first">A&nbsp;</span><span class="second">A&nbsp;</span><span
+          class="third">A&nbsp;</span></p>
+    </div> -->
+    <a class="navbar-item">
+      <img src="assets/image/govt_logo.jpeg" width="176" height="25">
+    </a>
+    <div class="buttons">
+    <button mat-icon-button class="settings" [matMenuTriggerFor]="appMenu">
+      <mat-icon>settings</mat-icon>
+    </button>
+    <mat-menu #appMenu="matMenu" class="menu">
+      <div class="firstGraph">
+      <input mat-menu-item type="checkbox" name="graph1" value="graph1">
+      <span class="inputText">Graph 1</span>
+    </div>
+      <input mat-menu-item type="checkbox" name="graph2" value="graph2"><span class="inputText">Graph 2</span>
+      <input mat-menu-item type="checkbox" name="graph3" value="graph3"><span class="inputText">Graph 3</span>
+    </mat-menu>
+    <button mat-button (click)="onLogout()" class="logout">
+      <mat-icon>exit_to_app</mat-icon>Logout
+    </button>
+    </div>
+  </div>
+
+</mat-toolbar>

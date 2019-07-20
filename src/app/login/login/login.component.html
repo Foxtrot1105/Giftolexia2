@@ -1,0 +1,103 @@
+<!-- <div class="signin-content">
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>Please login to continue</p>
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="User" formControlName="userName" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your user name
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <input matInput type="password" placeholder="Password" formControlName="password" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your password
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div> -->
+
+
+<!-- <div class="container login-container">
+  <div class="row">
+    <div class="col-md-6 login-form-1">
+      <img class="companyLogo" src='../../../assets/image/api-Mall.png'>
+
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your Email *" value="" />
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Your Password *" value="" />
+      </div>
+      <div class="login-logo">
+        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+      </div>
+      <div class="form-group">
+        <input type="submit" (click)="onSubmit()" class="btnSubmit" value="Login" />
+      </div>
+      <div class="form-group">
+        <a href="#" class="btnForgetPwd">Forgot Password?</a>
+      </div>
+
+    </div> -->
+
+
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100">
+      <form class="login100-form validate-form">
+        <div class="custom_login_image_logo p-b-43">
+          <img src='/assets/image/acra_logo.jpg' alt="" />
+        </div>
+
+        <span class="login100-form-title p-b-43">
+          Login to continue
+        </span>
+
+
+        <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+          <input class="input100" type="text" name="email">
+          <span class="focus-input100"></span>
+          <span class="label-input100">Email</span>
+        </div>
+
+
+        <div class="wrap-input100 validate-input" data-validate="Password is required">
+          <input class="input100" type="password" name="pass">
+          <span class="focus-input100"></span>
+          <span class="label-input100">Password</span>
+        </div>
+
+        <div class="flex-sb-m w-full p-t-3 p-b-32">
+          <div class="contact100-form-checkbox">
+            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+            <label class="label-checkbox100" for="ckb1">
+              Remember me
+            </label>
+          </div>
+
+          <div>
+            <a href="#" class="txt1">
+              Forgot Password?
+            </a>
+          </div>
+        </div>
+
+
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" (click)="onSubmit()">
+            Login
+          </button>
+        </div>
+
+      </form>
+
+      <div class="login100-more" style="background-image: url('/assets/image/singapore_login_image.jpg');">
+      </div>
+    </div>
+  </div>
+</div>

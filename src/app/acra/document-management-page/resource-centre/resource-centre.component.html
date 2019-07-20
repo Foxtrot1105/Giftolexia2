@@ -1,0 +1,61 @@
+<div class="full-content">
+  <mat-card class="breadcrumb-card">
+  <div class="row">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="custom_href" href=">"> Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Resource Centre</li>
+      </ol>
+    </nav>
+  </div>
+  </mat-card>
+  <div class="border-list">
+    <h2>Resource Centre</h2>
+  </div>
+
+  <div class="col-sm-12">
+    <div class="content-authorisation">
+
+      <div class="row group-row">
+        <div class="col-sm-12">
+          <div class="subheader">
+            <span>API Reference Materials</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="row file-row custom_row_card col-md-4 col-lg-4 col-xs-12 col-sm-12"
+            *ngFor="let d of resourcedocs">
+            <mat-card>
+              <mat-card-title>
+                <div class="row">
+                  <p class="custom_heading_title">
+                    {{d.name}}
+                  </p>
+                  <span class="custom_menu_icon">
+                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                  </span>
+                </div>
+              </mat-card-title>
+              <img mat-card-image src="assets/image/docx-icon.png" class="custom_mat_card_image">
+              <p class="custom_word">{{d.desc}}</p>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <mat-icon>border_color</mat-icon>
+                  <span>Edit</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon (click)="deleteDialog()">delete</mat-icon>
+                  <span>Delete</span>
+                </button>
+              </mat-menu>
+
+            </mat-card>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

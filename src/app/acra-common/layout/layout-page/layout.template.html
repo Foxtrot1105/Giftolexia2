@@ -1,0 +1,37 @@
+<!-- <div id="wrapper">
+
+  <app-header></app-header>
+
+  <div class="container-fluid">
+
+    <app-side-nav></app-side-nav>
+
+    <app-footer></app-footer>
+
+
+    <div class="main_body">
+      <router-outlet></router-outlet>
+    </div>
+
+
+  </div>
+
+</div> -->
+<div id="wrapper" class="main_body">
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      <app-side-nav (sidenavClose)="sidenav.close()"> </app-side-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  </div>
+  
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+<!-- <div class="cutom_footer" style="height: 70px"></div> -->
+
+
+
+

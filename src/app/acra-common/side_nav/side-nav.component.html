@@ -1,0 +1,231 @@
+<!-- <div id="wrapper" [ngClass]="ref.click === true? 'toggled' :''">
+  <div class="overlay" [ngStyle]="{disply:ref.click === true? 'block' :'none'}"></div>
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+      <li class="sidebar-brand">
+        <a href="#">
+          ACRA ADMIN
+        </a>
+      </li>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User & Subscription Management
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">User Group View</a></li>
+          <li><a href="#">Subscription Management</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">API Management
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">General Documentation</a></li>
+          <li><a href="#">API Category Management</a></li>
+          <li><a href="#">API Category Package Management</a></li>
+          <li><a href="#">API Management</a></li>
+          <li><a href="#">FD Config Management</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Document Management
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a routerLink="/resourceCentre">Resource Centre</a></li>
+          <li><a routerLink="/apiDocumentation">API Documentation</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Report Management
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Utlisation Report</a></li>
+          <li><a href="#">Customer Report</a></li>
+          <li><a href="#">Subscription Variation Report</a></li>
+          <li><a href="#">Purchase History Report</a></li>
+          <li><a href="#">Monthly Summary Report</a></li>
+          <li><a href="#">FD Report</a></li>
+          <li><a href="#">Sechduled Emails For Report</a></li>
+          <li><a href="#">WIS Survey Report</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Market Place Management
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">System Announcement</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="page-content-wrapper">
+    <button appSidebar #ref="appSidebar" type="button" class="hamburger is-closed" data-toggle="offcanvas">
+      <span class="hamb-top"></span>
+      <span class="hamb-middle"></span>
+      <span class="hamb-bottom"></span>
+    </button>
+
+  </div>
+
+</div> -->
+
+
+<!-- <div class="example-container">
+  
+
+  <mat-sidenav-container>
+    <mat-sidenav #appDrawer mode="over" opened="false">
+      <mat-nav-list>
+        <a mat-list-item>Home</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div> -->
+<div class="navList">
+  <mat-nav-list class="navigation">
+    <!-- <a mat-list-item [routerLink]="['/home']" (click)="onSidenavClose()" id="firstItem">
+        <span class="nav-caption">MAIN NAVIGATION</span>
+      </a> -->
+    <!-- <a mat-list-item routerLink="/owner" (click)="onSidenavClose()">
+    <mat-icon>assignment_ind</mat-icon> <span class="nav-caption">User & Subscription Management</span>
+  </a> -->
+  <a mat-list-item [routerLink]="['/home']" (click)="onSidenavClose()" id="listItem">
+    <mat-icon style="color: #747474;">home</mat-icon><span class="nav-caption">Home</span>
+  </a>
+    <!-- <mat-list-item (click)="onSidenavClose()" id="listItem">
+      <mat-icon>home</mat-icon>
+      <a matline [routerLink]="['/home']">Home</a>
+    </mat-list-item> -->
+    <mat-list-item (click)="openSideBar('icon1','dropDown1')" id="listItem">
+      <mat-icon>perm_identity</mat-icon>
+      <a matline>Subscription Management</a>
+      <i id="icon1" class="fa fa-angle-left dropDownIcon" aria-hidden="true"></i>
+    </mat-list-item>
+    <!-- <mat-menu #userMenu>
+    <button mat-menu-item (click)="onSidenavClose()">User Group View</button>
+    <button mat-menu-item (click)="onSidenavClose()">Subscription Management</button>
+  </mat-menu> -->
+    <mat-nav-list id="dropDown1" class="toggle dropDownList">
+      <a mat-list-item id="dropListItem" routerLink='group' (click)="onSidenavClose()" [routerLink]="['/group']">
+        User Group View
+      </a>
+      <a mat-list-item [routerLink]="['/subscription']" (click)="onSidenavClose()">
+        Subscription Management
+      </a>
+    </mat-nav-list>
+
+    <mat-list-item (click)="openSideBar('icon2','dropDown2')" id="listItem">
+      <mat-icon>category</mat-icon>
+      <a matline>API Management</a>
+      <i id="icon2" class="fa fa-angle-left dropDownIcon" aria-hidden="true"></i>
+    </mat-list-item>
+    <!-- <mat-menu #apiMenu="matMenu">
+    <button mat-menu-item (click)="onSidenavClose()"> General Documentation</button>
+    <button mat-menu-item (click)="onSidenavClose()">API Category Management</button>
+    <button mat-menu-item (click)="onSidenavClose()">API Category Package Management</button>
+    <button mat-menu-item (click)="onSidenavClose()">API Management</button>
+    <button mat-menu-item (click)="onSidenavClose()">FD Config Management</button>
+  </mat-menu> -->
+
+    <mat-nav-list id="dropDown2" class="toggle dropDownList">
+      <a mat-list-item>
+        General Documentation
+      </a>
+      <a mat-list-item>
+        API Category Management
+      </a>
+      <a mat-list-item>
+        API Category Package Management
+      </a>
+      <a mat-list-item>
+        API Management
+      </a>
+      <a mat-list-item>
+        FD Config Management
+      </a>
+    </mat-nav-list>
+
+    <mat-list-item (click)="openSideBar('icon3','dropDown3')" id="listItem">
+      <mat-icon>pages</mat-icon>
+      <a matline>Document Management</a>
+      <i id="icon3" class="fa fa-angle-left dropDownIcon" aria-hidden="true"></i>
+    </mat-list-item>
+    <!-- <mat-menu #docMenu="matMenu">
+    <button mat-menu-item (click)="onSidenavClose()" [routerLink]="['/resourceCentre']"> Resource Centre</button>
+    <button mat-menu-item (click)="onSidenavClose()" [routerLink]="['/apiDocumentation']">API Documentation</button>
+  </mat-menu> -->
+    <mat-nav-list id="dropDown3" class="toggle dropDownList">
+      <a mat-list-item [routerLink]="['/resourceCentre']">
+
+        <a (click)="onSidenavClose()">Resource Centre</a>
+      </a>
+      <a mat-list-item>
+        API Documentation
+      </a>
+    </mat-nav-list>
+
+    <mat-list-item (click)="openSideBar('icon4','dropDown4')" id="listItem">
+      <mat-icon>report</mat-icon>
+      <a matline>Report Management</a>
+      <i id="icon4" class="fa fa-angle-left dropDownIcon" aria-hidden="true"></i>
+
+    </mat-list-item>
+    <!-- <mat-menu #reportMenu="matMenu">
+    <button mat-menu-item (click)="onSidenavClose()">Utlisation Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">Customer Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">Subscription Variation Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">Purchase History Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">Monthly Summary Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">FD Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">Sechduled Emails For Report</button>
+    <button mat-menu-item (click)="onSidenavClose()">WIS Survey Report</button>
+  </mat-menu> -->
+    <mat-nav-list id="dropDown4" class="toggle dropDownList">
+      <a mat-list-item>
+        Utlisation Report
+      </a>
+      <a mat-list-item>
+        Customer Report
+      </a>
+      <a mat-list-item>
+        Subscription Variation Report
+      </a>
+      <a mat-list-item>
+        Purchase History Report
+      </a>
+      <a mat-list-item>
+        FD Report
+      </a>
+      <a mat-list-item>
+        Sechduled Emails For Report
+      </a>
+      <a mat-list-item>
+        WIS Survey Report
+      </a>
+    </mat-nav-list>
+
+
+    <mat-list-item (click)="openSideBar('icon5','dropDown5')" id="listItem">
+      <mat-icon>devices_other</mat-icon>
+      <a matline>Market Place Management</a>
+      <i id="icon5" class="fa fa-angle-left dropDownIcon" aria-hidden="true"></i>
+    </mat-list-item>
+    <!-- <mat-menu #marketMenu="matMenu">
+    <button mat-menu-item (click)="onSidenavClose()">System Announcement</button>
+    <button mat-menu-item (click)="onSidenavClose()">FAQ</button>
+  </mat-menu> -->
+    <mat-nav-list id="dropDown5" class="toggle dropDownList">
+      <a mat-list-item>
+        System Announcement
+      </a>
+      <a mat-list-item (click)="onSidenavClose()" [routerLink]="['/faq']">
+        FAQ
+      </a>
+    </mat-nav-list>
+  </mat-nav-list>
+</div>

@@ -1,0 +1,97 @@
+.list-content {
+  padding-top: 15px;
+}
+
+.faqcord {
+  text-decoration: none;
+}
+
+.text-faq {
+  text-align: justify;
+  font-size: 13px;
+}
+
+/* spcp modal */
+.modal-content-pass {
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 0px;
+}
+
+.text-modal-pass {
+  font-size: 13px;
+}
+
+.text-modal-pass:hover {
+  text-decoration: underline;
+}
+
+.text-header-pass {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 10% auto;
+  }
+
+  .hidden-lg {
+    display: none;
+  }
+}
+
+.body-pass {
+  border-top: none;
+  text-align: left;
+  min-height: 260px;
+}
+
+.custom_href {
+  color: #007bff;
+}
+
+.breadcrumb {
+  background: none
+}
+
+.footer-pass {
+  text-align: left;
+  border-top: none;
+  padding: 5px 0 15px 30px;
+}
+
+.border-pass {
+  padding: 15px;
+  Background: #fff;
+  min-height: 100px;
+  box-shadow: 4px 4px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+.weight-pass {
+  min-height: 120px;
+}
+
+.link-pass {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link-pass:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.pass-image img {
+  padding-top: 16%;
+  vertical-align: middle;
+}
+
+.header-modal-primary {
+  color: #fff;
+  padding: 10px;
+  background: #607D8B;
+}
